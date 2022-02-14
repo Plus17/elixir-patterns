@@ -10,6 +10,7 @@ defmodule Exercises.Application do
     children = [
       # Starts a worker by calling: Exercises.Worker.start_link(arg)
       # {Exercises.Worker, arg}
+      {Exercises.PeriodictTask, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
